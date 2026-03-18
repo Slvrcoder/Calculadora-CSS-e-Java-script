@@ -1,5 +1,5 @@
 .cabecalho {
-    background-color: #4CAF50;
+    background-color: #ae8625;
     color: white;
     padding: 15px;
     text-align: center;
@@ -7,7 +7,7 @@
     
 }
 .rodapecabecalho {
-    background-color: #f1f1f1;
+    background-color:white;
     color: #333;
     padding: 2px;
     text-align: center;
@@ -19,20 +19,27 @@ main {
     align-items: center;
     height: 80vh;
 }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
 .calculadora {
-    background-color: #4CAF50;
+    background-color: #ae8625;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
     display: grid;
+    height: 500px;
+    width: 300px;
 }
 .display {
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: center;
     padding: 10px;
     font-size: 24px;
     border: none;
@@ -41,7 +48,7 @@ main {
 .botoes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 .botao {
     padding: 20px;
@@ -53,4 +60,13 @@ main {
 }
 .botao:hover {
     background-color: #ddd;
+}
+#resultado {
+    width: 100%;
+    height: 80px;
+    font-size: 32px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
 }
